@@ -81,7 +81,7 @@ export default function App(){
   },[coordinates])
 
   return (
-  <main className="app">
+  <div className="app-container">
     <Header/>
     <SearchBar search={setQuery}/>
 
@@ -98,7 +98,7 @@ export default function App(){
       : null }
 
     <Footer/>
-  </main>
+  </div>
   )
 }
 

@@ -14,7 +14,7 @@ export default function WeatherBoxContainer(props){
   }
 
   return(
-    <div>
+    <div className="chuj">
       <div className = "location-info">
         <span className = "location-info_city-name"> {props.location.city} </span>
         <span className = "location-info_country-code"> {props.location.country} </span>

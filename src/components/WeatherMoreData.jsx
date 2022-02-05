@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/WeatherMoreData.css';
+
 export default function WeatherMoreData(props){
   return (
     <div className = "weather-more-data">

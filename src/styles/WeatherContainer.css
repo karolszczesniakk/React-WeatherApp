@@ -1,10 +1,18 @@
 .weather-container{
-  padding-left: 12%;
-  padding-right: 12%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 15px;
   margin-top: 50px;
+  
+
+}
+
+.chuj{
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 200px;
+
 }
 
 
