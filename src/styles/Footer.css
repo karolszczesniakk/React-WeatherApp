@@ -1,0 +1,15 @@
+
+.footer{
+  background-image: linear-gradient(#505877, #2a2f42);
+  height: 150px;
+  width: 100%;
+  display: table;
+  margin-top: 250px;
+  
+}
+
+.footer__text{
+  text-align:center; 
+  vertical-align: middle;
+  display: table-cell; 
+}

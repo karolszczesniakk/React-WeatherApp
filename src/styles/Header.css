@@ -1,0 +1,20 @@
+.header{
+  background-image: linear-gradient(#2a2f42, #505877 );
+  width: 100%;
+  height: 150px; 
+  padding-top: 15px;
+  display: table;
+}
+
+.header h1{
+  text-align:center; 
+  vertical-align: middle;
+  display: table-cell; 
+  font-size: 5rem;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,23 @@
+input {
+  padding: 15px;
+  font-family: 'Josefin Sans', cursive;
+  font-size: 2rem;
+  display: "block";
+
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #7f8cc2;
+  color:white;
+  border: 1px 1px 1px 1px
+}
+
+input:focus{
+  background-color: #7f8cc2;
+}
+input:hover{
+  box-shadow: 0 0 1em rgb(222, 224, 250) ;
+}
+
+
+::placeholder{
+  color:white;
+}

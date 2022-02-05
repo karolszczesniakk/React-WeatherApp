@@ -1,0 +1,64 @@
+.weather{
+  background-image: linear-gradient(-45deg, #5467b3ab, #5467b3);
+  height: 300px;
+  width: 200px;
+
+  color:#ffffff;
+  
+  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.63);
+  place-self: center;
+  font-size: 2em;
+  transition: height 1s ease;
+
+}
+.weather img{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+.weather--expand{
+  background-image: linear-gradient(-45deg, #3a3cca , #798ee4 );
+  height: 400px;
+  color: #ffffff
+}
+
+.weather:hover{
+  box-shadow: 0 0 1em rgb(222, 224, 250) ;
+}
+
+.weather__description{
+  font-size: 1rem;
+}
+
+.weather__day{
+  margin-top: 20px;
+  margin-bottom: 0px
+}
+
+.weather__date{
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.weather__temperature{
+  margin-bottom: 10px;
+}
+.weather__icon{
+  margin:0px;
+}
+
+.weather-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:350px;
+}
+
+
+
+
+
