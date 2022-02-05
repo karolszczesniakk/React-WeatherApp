@@ -4,11 +4,6 @@ import Location from "./Location";
 
 import '../styles/WeatherContainer.css';
 
-
-
-
-
-
 export default function WeatherBoxContainer(props){
   const [focusBox,setFocusBox] = useState(null);
 

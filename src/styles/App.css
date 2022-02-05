@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
-html{
-  margin: 0;
-}
-
 body {
   color: #ffffff;
   background: #505877 ;
-  min-width: 500px;
-  height: 55%;
   margin: 0;
   font-family: 'Josefin Sans', cursive;
   text-align: center;
@@ -18,7 +12,6 @@ body {
   position: relative;
   min-width: 500px;
   min-height: 100vh;
-
 }
 
 p {

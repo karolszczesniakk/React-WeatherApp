@@ -1,13 +1,13 @@
 .weather-more-data{
   display: grid;
   grid-gap: 20px;
-
   margin-top: 25px;
-  font-size: 1.3rem;
-  opacity: 1;
-  animation: slide 1s;
-  text-align: left;
   padding-left:20px;
+  padding-right:5px;
+  font-size: 1.25rem;
+  text-align: left;
+  animation: slide 1s;
+  opacity: 1;
 }
 
 @keyframes slide {

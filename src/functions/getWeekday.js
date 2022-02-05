@@ -7,6 +7,7 @@ var weekdays=[
   "Friday",
   "Saturday"
 ]
+
 export default function getWeekday(number){
   return weekdays[number];
 }
