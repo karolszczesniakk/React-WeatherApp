@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import Weather from "./Weather";
+import Location from "./Location";
 
 import '../styles/WeatherContainer.css';
+
+
 
 
 
@@ -14,12 +17,9 @@ export default function WeatherBoxContainer(props){
   }
 
   return(
-    <div className="chuj">
-      <div className = "location-info">
-        <span className = "location-info_city-name"> {props.location.city} </span>
-        <span className = "location-info_country-code"> {props.location.country} </span>
-      </div>
-      <div className ='weather-container'>
+    <div className="weather-container">
+      <Location locationData={props.location}/>
+      <div className ='weather-table'>
         <Weather changeFocus = {changeFocus} data = {props.data[0]} id = {0} chosenBox = {focusBox} />
         <Weather changeFocus = {changeFocus} data = {props.data[1]} id = {1} chosenBox = {focusBox} />
         <Weather changeFocus = {changeFocus} data = {props.data[2]} id = {2} chosenBox = {focusBox} />

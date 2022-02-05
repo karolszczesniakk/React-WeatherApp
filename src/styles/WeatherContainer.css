@@ -1,4 +1,4 @@
-.weather-container{
+.weather-table{
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -8,7 +8,7 @@
 
 }
 
-.chuj{
+.weather-container{
   padding-left: 12%;
   padding-right: 12%;
   padding-bottom: 200px;
@@ -21,8 +21,7 @@
   padding-left: auto;
   margin-top: 2%;
   margin-bottom: 2%;
- 
- 
+
 }
 
 .location-info_city-name{

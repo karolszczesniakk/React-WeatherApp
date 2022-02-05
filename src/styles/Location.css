@@ -1,0 +1,14 @@
+.location{
+  padding-right: auto;
+  padding-left: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.location_city-name{
+  font-size: 3rem;
+}
+
+.location_country-code{
+  font-size:1rem;
+}
