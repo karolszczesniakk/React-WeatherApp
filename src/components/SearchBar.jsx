@@ -11,7 +11,7 @@ function SearchBar(props) {
       inputRef.current.value = "";
       /* 
       manipulating DOM directly is bad practice
-      but in this case I believe it's ok fine
+      but in this case I believe it's fine
       */
     }
   };
