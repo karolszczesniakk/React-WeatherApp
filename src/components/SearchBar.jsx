@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import '../styles/SearchBar.css';
+import React, { useRef } from "react";
+import "../styles/SearchBar.css";
 
-export default function SearchBar(props){
-
-  const [inputValue, updateInputValue] = useState("");
-  const handleChange = (e) => {
-    updateInputValue(e.target.value);
-  }
+function SearchBar(props) {
+  const inputRef = useRef();
+  console.log("reavaluted searchbar");
 
   const handleKeyPress = (event) => {
-    if(event.key === 'Enter'){
-      props.search(inputValue);
-      updateInputValue("")
+    if (event.key === "Enter") {
+      props.search(inputRef.current.value);
+      inputRef.current.value = "";
+      /* 
+      manipulating DOM directly is bad practice
+      but in this case I believe it's ok fine
+      */
     }
-  }
-
+  };
   return (
-    <input 
+    <input
       className="search-bar"
-      onKeyDown={handleKeyPress} 
-      onChange={handleChange} 
-      type="text" 
-      name="input" 
-      value={inputValue} 
-      placeholder='Enter city name...'>
-    </input>
-  )
+      onKeyDown={handleKeyPress}
+      ref={inputRef}
+      type="text"
+      name="input"
+      placeholder="Enter city name..."
+    ></input>
+  );
 }
 
+export default React.memo(SearchBar);
