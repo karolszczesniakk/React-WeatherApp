@@ -10,7 +10,7 @@ export default function WeatherBoxContainer(props) {
   const weatherData = props.data.slice(0, 5);
 
   const onFocusHandler = useCallback((id) => setFocusBox(id), []);
-  //makes react not recreate a function so WeatherBoxes doesnt get reavaluated when they don't need to
+  //makes react not recreate a function so WeatherBoxes don't get reavaluated when they don't need to
   //could also just pass setFocusBox as onFocus prop since React makes sure that function never changes
 
   return (
