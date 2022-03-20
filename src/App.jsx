@@ -46,6 +46,7 @@ export default function App() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(fetchData);
     }
+
   }, []);
 
   useEffect(() => {
@@ -63,6 +64,7 @@ export default function App() {
 
         setCoordinates({ lat, lon });
       } catch (err) {
+        console.log(err);
         setRenderState("Error");
       }
     }
@@ -72,10 +74,17 @@ export default function App() {
 
   useEffect(() => {
     if (Object.keys(coordinates).length === 0) return;
-    getWeatherForcast(coordinates).then((res) => {
-      setWeatherData(res.data.daily);
-      setRenderState("Ready");
-    });
+    async function fetchData() {
+      try {
+        const res = await getWeatherForcast(coordinates)
+        setWeatherData(res.data.daily);
+        setRenderState("Ready");
+      } catch (err) {
+        console.log(err);
+        setRenderState("Error");
+      }
+    }
+    fetchData();
   }, [coordinates]);
 
   let content;

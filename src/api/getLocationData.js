@@ -14,9 +14,6 @@ export default async function getLocationData(coordinates){
       }
     }
   );
-
+  
   return response;
-  
-  
-
 }

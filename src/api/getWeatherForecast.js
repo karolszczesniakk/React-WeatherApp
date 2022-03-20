@@ -1,7 +1,6 @@
 import axios from "axios";
 
 export default async function getLocationData(coordinates){
-
   const apiKey="7dd36b5c25a1af976140eea6d1203ce9";
 
   const response = await axios.get(
@@ -17,11 +16,6 @@ export default async function getLocationData(coordinates){
     }
   );
 
-
-
-
   return response;
   
-  
-
 }
